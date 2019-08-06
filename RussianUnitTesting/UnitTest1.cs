@@ -17,6 +17,7 @@ namespace RussianUnitTesting
 
 
         }
+        [TestMethod]
         public void TestSpinloadebullete()
         {
             var tac = unitTestobj.Spinloadedbullete(lodedbullete: 5);
