@@ -22,14 +22,10 @@ namespace RssianRoullete
         private void gunloadbtn_Click(object sender, EventArgs e)
         {
             Spingunbtn.Enabled = true;
-            //imglooder.Image = Image.FromFile(@"C:\Users\komal\Desktop\Russian123\res\load.jpg");
-            // Assembly myAssembly = Assembly.GetExecutingAssembly();
-            // Stream myStream = myAssembly.GetManifestResourceStream("Russian123.Resources.load.jpg");
-            // Bitmap bmp = new Bitmap(myStream);
 
-            //var bmp1 = new Bitmap(RssianRoullete.Properties.Resources.spin);
+
+
             imglooder.Image = RssianRoullete.Properties.Resources.load;
-            // Image.FromFile(RussianRoullete.Resources.load);
 
             gunloadbtn.Enabled = false;
 
@@ -39,14 +35,9 @@ namespace RssianRoullete
         {
             RoulleteOBJ.loadguns = spin.Next(1, 6);
             Shootgunbtn.Enabled = true;
-            //imglooder.Image = Image.FromFile(@"C:\Users\komal\Desktop\Russian123\res\spin.jpg");
-            // Assembly myAssembly = Assembly.GetExecutingAssembly();
-            // Stream myStream = myAssembly.GetManifestResourceStream("Russian123.Resources.spin.gif");
-            // Bitmap bmp = new Bitmap(myStream);
 
-            //var bmp1 = new Bitmap(RssianRoullete.Properties.Resources.spin);
             imglooder.Image = RssianRoullete.Properties.Resources.spin;
-            // Image.FromFile(RssianRoullete.Resource1.spin);
+
 
             Spingunbtn.Enabled = false;
             RoulleteOBJ.Shootaweay = 2;
@@ -55,7 +46,8 @@ namespace RssianRoullete
 
         private void Shootgunbtn_Click(object sender, EventArgs e)
         {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\komal\Desktop\Russian123\res\shoot.wav");
+
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(RssianRoullete.Properties.Resources.shoot);
             player.Play();
             int awaybullete = RoulleteOBJ.shootloaded();
             if (awaybullete == 1)
@@ -65,14 +57,8 @@ namespace RssianRoullete
                 Spingunbtn.Enabled = false;
                 Shootgunbtn.Enabled = false;
                 Shootabtn.Enabled = false;
-                imglooder.Image = Image.FromFile(@"C:\Users\komal\Desktop\Russian123\res\spin.jpg");
-                // Assembly myAssembly = Assembly.GetExecutingAssembly();
-                // Stream myStream = myAssembly.GetManifestResourceStream("Russian123.Resources.spin.gif");
-                // Bitmap bmp = new Bitmap(myStream);
 
-                //var bmp1 = new Bitmap(RssianRoullete.Properties.Resources.spin);
                 imglooder.Image = RssianRoullete.Properties.Resources.spin;
-                // Image.FromFile(RssianRoullete.Resource1.spin);
 
 
 
@@ -99,14 +85,9 @@ namespace RssianRoullete
                 Spingunbtn.Enabled = false;
                 Shootgunbtn.Enabled = false;
                 Shootabtn.Enabled = false;
-                //imglooder.Image = Image.FromFile(@"C:\Users\Dell\Desktop\Russian123\res\spin.jpg");
-                // Assembly myAssembly = Assembly.GetExecutingAssembly();
-                // Stream myStream = myAssembly.GetManifestResourceStream("Russian123.Resources.spin.gif");
-                // Bitmap bmp = new Bitmap(myStream);
 
-                //var bmp1 = new Bitmap(RssianRoullete.Properties.Resources.spin);
                 imglooder.Image = RssianRoullete.Properties.Resources.spin;
-                // Image.FromFile(RssianRoullete.Resource1.spin);
+
 
             }
             if (Load == 2)
@@ -116,14 +97,11 @@ namespace RssianRoullete
                 Spingunbtn.Enabled = false;
                 Shootgunbtn.Enabled = false;
                 Shootabtn.Enabled = false;
-                //imglooder.Image = Image.FromFile(@"C:\Users\komal\Desktop\Russian123\res\spin.jpg");
-                // Assembly myAssembly = Assembly.GetExecutingAssembly();
-                // Stream myStream = myAssembly.GetManifestResourceStream("Russian123.Resources.spin.gif");
-                // Bitmap bmp = new Bitmap(myStream);
 
-                //var bmp1 = new Bitmap(RssianRoullete.Properties.Resources.spin);
+
+
                 imglooder.Image = RssianRoullete.Properties.Resources.spin;
-                // Image.FromFile(RssianRoullete.Resource1.spin);
+
 
             }
             if (Load == 0)
@@ -139,14 +117,11 @@ namespace RssianRoullete
                 Spingunbtn.Enabled = false;
                 Shootgunbtn.Enabled = false;
                 Shootabtn.Enabled = false;
-                //imglooder.Image = Image.FromFile(@"C:\Users\komal\Desktop\Russian123\res\spin.jpg");
-                // Assembly myAssembly = Assembly.GetExecutingAssembly();
-                // Stream myStream = myAssembly.GetManifestResourceStream("Russian123.Resources.spin.gif");
-                // Bitmap bmp = new Bitmap(myStream);
 
-                //var bmp1 = new Bitmap(RssianRoullete.Properties.Resources.spin);
+
+
                 imglooder.Image = RssianRoullete.Properties.Resources.spin;
-                // Image.FromFile(RssianRoullete.Resource1.spin);
+
 
 
 
